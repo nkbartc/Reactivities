@@ -37,7 +37,7 @@ class ActivityStore {
           this.activityRegistry.set(activity.id, activity);
         });
         this.loadingInitial = false;
-      })
+      });
     } catch (error) {
       runInAction('load activities error', () => {
         this.loadingInitial = false;
